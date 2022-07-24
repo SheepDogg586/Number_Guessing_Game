@@ -1,5 +1,4 @@
 import random 
-
 # Guessing Game, where you play against a bot to guess the number it is 'thinking' of 
 def game(high_number):
     bot = random.randint(1,high_number)
@@ -19,9 +18,8 @@ def game(high_number):
             tries += 1
             print('Try a higher number')
             
-        
-    # print('You Win')
     print(f'You Win, it took you {tries} tries')
+    # Offers the user the option to move to next level
     play_again = input('Do you want to go to the next level? ').lower()
     if play_again == 'y' or play_again == 'yes':
         game(high_number + 10)
